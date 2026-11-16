@@ -1,0 +1,30 @@
+/* Три темы: black / white / green. Пыль и слово красятся через переменные. */
+:root{
+  --bg:#050505; --bg2:#0d0d0f; --surface:#101012; --surface2:#17171a;
+  --text:#f2f0e8; --muted:#8f8d84; --brand:#f2f0e8; --brand-ink:#050505;
+  --border:#232326;
+  --cream:#f5f3ea; --cream-mid:#d9d6c8; --cream-low:#9d9b90; --cream-dim:#55534a;
+  --dust-a:235,232,220; --dust-b:120,118,110;
+  --radius:12px;
+}
+[data-theme="black"]{
+  --bg:#050505; --bg2:#0d0d0f; --surface:#101012; --surface2:#17171a;
+  --text:#f2f0e8; --muted:#8f8d84; --brand:#f2f0e8; --brand-ink:#050505;
+  --border:#232326;
+  --cream:#f5f3ea; --cream-mid:#d9d6c8; --cream-low:#9d9b90; --cream-dim:#55534a;
+  --dust-a:235,232,220; --dust-b:120,118,110;
+}
+[data-theme="white"]{
+  --bg:#f2f2f0; --bg2:#ffffff; --surface:#ffffff; --surface2:#e8e8e4;
+  --text:#161616; --muted:#6d6d68; --brand:#161616; --brand-ink:#f2f2f0;
+  --border:#d5d5d0;
+  --cream:#141414; --cream-mid:#141414; --cream-low:#141414; --cream-dim:#141414;
+  --dust-a:70,70,68; --dust-b:160,160,158;
+}
+[data-theme="green"]{
+  --bg:#1d2321; --bg2:#232b28; --surface:#25302b; --surface2:#2e3a34;
+  --text:#d8e6d2; --muted:#8ba184; --brand:#b8dca8; --brand-ink:#1d2321;
+  --border:#35423b;
+  --cream:#dcf2d2; --cream-mid:#a4d194; --cream-low:#5f8a5c; --cream-dim:#2e4030;
+  --dust-a:190,220,180; --dust-b:90,120,95;
+}

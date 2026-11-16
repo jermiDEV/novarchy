@@ -1,0 +1,19 @@
+/* Стек "Проекты" — по мотивам секции плагинов оригинала omarchy.org:
+   моноширинная типографика, прямоугольные карточки, скриншот сверху,
+   строка "название ★ N", двухстрочное описание, мета "автор - рубрика".
+   Превью-заглушки градиентные (фото оригинала не переносим). */
+.stack-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.stack-head h2{margin:0}
+.stack-all{font-family:var(--font-mono);font-size:14px;color:var(--text);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;white-space:nowrap}
+.stack-all:hover{color:var(--brand)}
+#projects .lead{color:var(--text);font-family:var(--font-mono);font-size:15px;line-height:1.7;max-width:640px}
+#projectGrid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin-top:28px}
+@media(max-width:800px){#projectGrid{grid-template-columns:1fr}}
+.pcard{background:var(--surface);border:1px solid var(--border);border-radius:2px;overflow:hidden;transition:border-color var(--transition, .15s),transform .15s}
+.pcard:hover{border-color:var(--brand);transform:translateY(-1px)}
+.pthumb{aspect-ratio:16/10;background:linear-gradient(135deg,var(--brand),transparent),var(--bg2);position:relative;overflow:hidden}
+.pbody{padding:16px 18px 18px}
+.ptitle{display:flex;justify-content:space-between;gap:12px;font-family:var(--font-mono);font-size:15px;color:var(--text)}
+.pstars{color:var(--muted);white-space:nowrap}
+.pdesc{font-family:var(--font-mono);font-size:13.5px;line-height:1.6;color:var(--text);opacity:.85;margin:10px 0 12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pmeta{font-family:var(--font-mono);font-size:13px;color:var(--muted)}

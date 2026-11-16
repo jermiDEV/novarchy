@@ -1,0 +1,13 @@
+.picker{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
+.picker.open{display:flex}
+.stage{display:flex;gap:12px;align-items:center}
+.prev{width:min(44vw,360px);aspect-ratio:16/9;border:3px solid #555;background:var(--bg2,#12141b);display:flex;align-items:center;justify-content:center;font-weight:800;clip-path:polygon(2.5% 0,100% 0,97.5% 100%,0 100%);transition:all .18s}
+.prev.center{transform:scale(1);border-color:var(--brand)}
+.prev.side{transform:scale(.88);filter:brightness(.6)}
+.palette{position:fixed;inset:0;z-index:60;display:none;align-items:flex-start;justify-content:center;padding-top:12vh;background:rgba(0,0,0,.5)}
+.palette.open{display:flex}
+.box{width:min(600px,92vw);background:var(--bg2,#12141b);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.box input{width:100%;padding:14px;background:transparent;border:0;color:var(--text);outline:none;font-size:16px}
+.box ul{list-style:none;margin:0;padding:8px;max-height:300px;overflow:auto}
+.box li{padding:8px 10px;border-radius:8px;cursor:pointer}
+.box li:hover{background:var(--surface)}

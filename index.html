@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="black">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Novarchy — красивая, весёлая и агентная ОС (демо)</title>
+<link rel="stylesheet" href="./css/fonts.css">
+<link rel="stylesheet" href="./css/omarchy-stack.css">
+<link rel="stylesheet" href="./css/fix.css">
+<link rel="stylesheet" href="./css/tokens.css">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/hero.css">
+<link rel="stylesheet" href="./css/projects.css">
+<link rel="stylesheet" href="./css/player.css">
+<link rel="stylesheet" href="./css/overlays.css">
+</head>
+<body id="top">
+<header class="topbar">
+  <span class="brandmark">◫</span>
+  <nav class="nav mono"><a href="#projects">Проекты</a></nav>
+  <div class="spacer"></div>
+  <button class="iconbtn" id="paletteBtn" title="Сменить тему (T)" aria-label="Темы">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.8 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1.1-.2-.3-.4-.7-.4-1.1 0-.8.7-1.5 1.5-1.5H16c2.8 0 5-2.2 5-5C21 6.1 17 2 12 2zM7 12c-.8 0-1.5-.7-1.5-1.5S6.2 9 7 9s1.5.7 1.5 1.5S7.8 12 7 12zm4-4C10.2 8 9.5 7.3 9.5 6.5S10.2 5 11 5s1.5.7 1.5 1.5S11.8 8 11 8zm4 0c-.8 0-1.5-.7-1.5-1.5S14.2 5 15 5s1.5.7 1.5 1.5S15.8 8 15 8zm0 8c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg>
+  </button>
+  <button class="iconbtn" id="globeBtn" title="Язык" aria-label="Язык">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></svg>
+  </button>
+  <button class="iconbtn" id="searchBtn" title="Поиск (/)" aria-label="Поиск">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11a7 7 0 1 0 14 0 7 7 0 0 0-14 0zM20 20l-3.5-3.5"/></svg>
+  </button>
+  <button class="iconbtn" id="gitBtn" title="Репозиторий" aria-label="Git">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.2-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.4.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 22 12c0-5.5-4.5-10-10-10z"/></svg>
+  </button>
+  <button class="install" onclick="document.getElementById('projects').scrollIntoView()">Проекты</button>
+</header>
+
+<!-- ШАПКА / главная -->
+<section class="hero">
+  <canvas id="dust"></canvas>
+  <div class="hero-inner">
+    <div class="pill mono">NebulaCloud joins as a Founding Patron with $3 million <span>→</span></div>
+    <div class="word-wrap"><canvas id="word"></canvas></div>
+    <h1 class="tagline">Beautiful, fun &amp; agentic Linux by Dev</h1>
+    <p class="hero-sub">The malleable OS for the age of agents.<br>Vibe your way through every alteration, tweak, or trouble.</p>
+    <div class="hero-cta">
+      <button class="btn-cream" onclick="document.getElementById('projects').scrollIntoView()">⭳ Get Novarchy</button>
+      <button class="btn-ghost" onclick="document.getElementById('projects').scrollIntoView()">▶ Проекты</button>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <!-- СТЕК "FIX": перенос секции about с omarchy.org -->
+  <section id="fix">
+    <div class="fix-grid">
+      <div>
+        <h2 data-typed-block="true" class="fix-title"><a href="#fix"><span class="sr-only">We can fix everything.</span><span aria-hidden="true">We can fix every<span data-typing="0"><span data-typed-text></span><span class="typed-caret" aria-hidden="true"></span></span></span></a></h2>
+        <p class="fix-text">Linux used to be a chore to setup, difficult to debug, and full of confusing upfront choices. Omarchy solves all of it with a lightning fast installation, agents that debug all issues, and fantastic defaults that give you a fully functioning system that looks amazing out of the box.</p>
+        <p class="fix-text">Oma is for omakase, chef's choice: we pick the tools and tune the details, so you can get straight to work. But this is your computer. You're free to change everything.</p>
+        <p class="fix-text">Behind it all is the <a href="#">Omarchy Doctrine</a>: ten principles for uniting the nerds, welcoming the agents, and building the perfect computer. We're not there yet, but <a href="#">we can fix everything now.</a></p>
+      </div>
+      <figure class="fix-quote">
+        <div aria-hidden="true" class="fix-qmark">“</div>
+        <blockquote>When you can vibe code whatever app comes to your mind, you should be able to vibe code your operating system.</blockquote>
+        <figcaption class="fix-person">
+          <span class="fix-avatar" aria-hidden="true">DH</span>
+          <span class="fix-names"><b>David Heinemeier Hansson</b><span>Creator of Omarchy</span></span>
+          <a href="#" class="fix-play" aria-label="Watch him say it, on YouTube"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 22V2L22 12L5 22Z" fill="currentColor"></path></svg></a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ЕДИНСТВЕННЫЙ СТЕК: здесь хранятся проекты -->
+  <section id="projects">
+    <div class="stack-head">
+      <h2>Проекты</h2>
+      <a class="stack-all" href="#projects">Все проекты →</a>
+    </div>
+    <p class="lead">Тысячи проектов сообщества. Не нашёл нужный — повесь задачу на агента и поделись результатом.</p>
+    <div id="projectGrid"></div>
+  </section>
+</div>
+
+<footer><div class="wrap" style="padding-top:52px;padding-bottom:60px">
+  <div class="fcols">
+    <div class="fbrand">
+      <div class="logo"><span>◆</span> novarchy</div>
+      <p class="meta" style="margin:12px 0;line-height:1.6">Красивая, весёлая и агентная ОС.<br>Гибкая система для эпохи агентов.</p>
+    </div>
+  </div>
+  <div class="fbar"><span>novarchy™ — демо, не копия omarchy.org</span><span>contact@example.org</span></div>
+</div></footer>
+
+<div class="picker" id="picker">
+  <div style="text-align:center">
+    <div class="stage">
+      <button class="btn" id="prevT">←</button>
+      <div class="prev side" id="pL"></div><div class="prev center" id="pC"></div><div class="prev side" id="pR"></div>
+      <button class="btn" id="nextT">→</button>
+    </div>
+    <div id="pName" style="margin:12px;font-size:22px;font-weight:800"></div>
+    <div class="meta">Enter — применить · Esc — закрыть · ←/→ — листать</div>
+  </div>
+</div>
+
+<div class="palette" id="palette"><div class="box"><input id="palInput" placeholder="Поиск по демо…"><ul id="palList"></ul></div></div>
+<div id="hint" class="notice" style="display:none"><b>Смена темы</b><br><span class="meta">Нажми T. Внутри системы это Super+Ctrl+Shift+Space.</span></div>
+
+<script src="./js/fix-typing.js"></script>
+<script src="./js/wordmark.js"></script>
+<script src="./js/pixel-hero.js"></script>
+<script src="./js/themes.js"></script>
+<script src="./js/picker.js"></script>
+<script src="./js/content.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
